@@ -1,0 +1,94 @@
+/* Paramètres Généraux */
+
+:root{
+    --color-primary: #fbf0db;
+    --color-secondary: #EA6143;
+    --color-tertiary: #fefeff;
+}  
+
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins', sans-serif;
+    src: url();
+}
+
+*::selection{
+    background: var(--color-primary);
+    color: #fefeff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-primary);
+    color: #fefeff;
+}
+
+a{
+    text-decoration: none;
+    color: #262727;
+    
+}
+
+/* Paramètres par ordre d'apparition */
+
+.container{
+    
+    max-width: 1200px;
+    margin: 0 auto;    
+}
+
+nav{
+    display: flex;
+    align-items: flex-end;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+nav .logo{
+    margin-right: auto;
+    font-size: calc(1.5rem + 1vw);
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    /* text-decoration: underline overline var(--color-secondary); */
+    border-bottom: 3px solid #EA6143;
+}
+
+nav a:not(:first-child){
+    margin:0 1rem;
+}
+nav a:not(:first-child):hover{
+    color: var(--color-secondary);
+    border-bottom: 3px solid var(--color-secondary);
+}
+
+.home{
+    max-width: 1000px;
+    height: 600px;
+    margin-left: auto;
+    position: relative;
+}
+.home h1{
+    font-size: calc(2.5rem + 1vw);
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--color-secondary);
+    padding: 3rem;
+    position: absolute;
+    top: 50%;
+    left: -200px;
+}
+
+.home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
