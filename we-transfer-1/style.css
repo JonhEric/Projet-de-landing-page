@@ -1,0 +1,131 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #07061f;
+    color: #f1f1f1;
+}
+nav{
+    width: 100%;
+    height: 70px;
+}
+
+nav a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: calc(2rem + 1vw);
+    line-height: 70px;
+    padding: 0 20px;
+}
+
+.title h1{
+    max-width: 65%;
+    text-align: center;
+    font-size: calc(1.5rem + 1vw);
+    /* font-size: 2rem; */
+    margin: 3rem auto;
+}
+
+.container{
+    width: 70%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 auto;    
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        flex-direction: column;
+    }
+    .free{
+        margin-bottom: 2rem;
+    }
+
+
+}
+    
+
+.card{
+    max-width: 320px;
+    min-width: 250px;
+    height: 450px;
+    padding: 3rem;    
+    border-radius: 1rem;
+    background-color: #333;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;    
+    margin-right: 2rem;
+}
+
+.card h2{
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #f1f1f1;
+    font-size: calc(1rem + 1vw);
+    font-weight: 800;
+}
+
+.card p{
+    font-size: calc(1rem + .8vw);
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+.card ul li{
+    font-size: calc(1rem + .3vw);
+    font-weight: 300;
+    line-height: 2;
+    padding-left: calc(.7rem + .3vw);
+}
+
+.card span{
+    font-weight: 600;
+}
+
+.btn{
+    align-content: center;
+    margin-top: auto;
+    border-radius: 25px;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+.free{
+    background-color: #0b0931;
+}
+.inscription{
+    background-color: transparent;
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1;
+}
+.pro{
+    background-color: #f1f1f1;
+    color:#243dce;
+    
+}
+.pro h2{
+    border-bottom: 2px solid #243dce;
+}
+.btn-pro{
+    background-color: #243dce;
+    color: #f1f1f1;
+    outline: none;
+    border: none;
+}
+.send{
+    color: #f1f1f1;
+    text-align: center;
+    display: block;
+    margin-top: 4rem;
+    font-size: calc(1rem + 0.5vw);
+}
